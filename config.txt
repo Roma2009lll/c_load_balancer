@@ -1,0 +1,9 @@
+port 9000
+algorithm round_robin
+backend 127.0.0.1:8081
+backend 127.0.0.1:8082
+backend 127.0.0.1:8083
+health_check_interval 5
+health_check_timeout 2
+health_check_fails 3
+health_check_passes 2
