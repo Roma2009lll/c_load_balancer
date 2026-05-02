@@ -22,8 +22,6 @@ void handleSendingDataCL(int curFd,BackendPool* mainPool,ConnectionManager* main
 void handleSendingDataBk(int curFd,BackendPool* mainPool,ConnectionManager* mainManager,Connection* conCheack);
 
 int main(void){
-    //gcc main.c backend.c connection.c -o load_balancer -Wall -pthread
-    //./load_balancer
     Config conf;
     BackendPool* mainPool=NULL;
     ConnectionManager* mainManager=NULL;
